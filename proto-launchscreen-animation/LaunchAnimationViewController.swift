@@ -36,8 +36,29 @@ class LaunchAnimationViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         imageView.center = view.center
+        // run animation code with .5 sec delay
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.5, execute: {
+            self.animate()
+        })
         
-
+        
+    }
+    
+    private func animate(){
+        UIView.animate(withDuration: 1, animations: {
+            let size = self.view.frame.size.width * 1.5
+            let diffx = size - self.view.frame.size.width
+            let diffy = self.view.frame.size.height - size
+            
+            self.imageView.frame = CGRect(
+                x: -(diffx/2),
+                y: diffy/2,
+                width: size,
+                height: size
+            )
+        }) { flag in
+            print("animation completed")
+        }
     }
 
 

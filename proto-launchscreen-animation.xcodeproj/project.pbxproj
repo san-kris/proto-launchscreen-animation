@@ -42,7 +42,6 @@
 		AA801B0429B52E7C0045D19A = {
 			isa = PBXGroup;
 			children = (
-				AA801B2429B634380045D19A /* HomeViewController.swift */,
 				AA801B0F29B52E7C0045D19A /* proto-launchscreen-animation */,
 				AA801B0E29B52E7C0045D19A /* Products */,
 			);
@@ -59,6 +58,7 @@
 		AA801B0F29B52E7C0045D19A /* proto-launchscreen-animation */ = {
 			isa = PBXGroup;
 			children = (
+				AA801B2429B634380045D19A /* HomeViewController.swift */,
 				AA801B1029B52E7C0045D19A /* AppDelegate.swift */,
 				AA801B1229B52E7C0045D19A /* SceneDelegate.swift */,
 				AA801B1429B52E7C0045D19A /* LaunchAnimationViewController.swift */,
